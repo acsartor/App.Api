@@ -17,6 +17,7 @@ namespace App.Persistence
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
         public DbSet<Pessoa> pessoa { get; set; }
